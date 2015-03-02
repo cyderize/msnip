@@ -1,0 +1,48 @@
+html, body {
+	background-color:#EFEFEF;
+	font-family: Verdana, Tahoma, Arial, Helvetica;
+	font-size: 10pt;
+}
+#control {
+	margin: 4px 0;
+}
+#presenter_mode, #html_mode {
+	float: right;
+	margin-left: 5px;
+}
+#output {
+	padding: 5px;
+}
+#input {
+	border: solid 1px #CCC;
+	border-radius: 4px;
+	padding: 5px;
+	height: 200px;
+	background-color:#FFF;
+}
+#maths_input {
+	width: 100%;
+	height: 100%;
+	border: 0;
+	resize: none;
+}
+#copyright {
+	float: right;
+}
+@media print {
+	html, body {
+		background-color: initial;
+	}
+	#input, #control  {
+		display: none;
+	}
+	#output {
+		border: 0;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	#copyright {
+		float: initial;
+	}
+}
