@@ -71,7 +71,7 @@
 				var presenter = document.getElementById("present").checked;
 				var html = document.getElementById("html").checked;
 				
-				var url = [location.protocol, '//', location.host, location.pathname].join('') + "?q=" + encodeURIComponent(input) + "&p=" + (presenter ? "true" : "false") + "&h=" + (html ? "true" : "false");
+				var url = [location.protocol, '//', location.host, location.pathname].join('') + "?q=" + input + "&p=" + (presenter ? "true" : "false") + "&h=" + (html ? "true" : "false");
 				
 				var script = document.createElement('script');
 				script.src = "http://is.gd/create.php?format=json&callback=shareLink&url=" + encodeURIComponent(url);
